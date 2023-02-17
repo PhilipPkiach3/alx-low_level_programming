@@ -2,15 +2,15 @@
 /**
  * main - main function
  *
- * Return: 0 on success
+ * Return: 0 (success)
  */
 int main(void)
 {
 	int s = 97, e = 122;
 	while (s <=e)
 	{
-		if '(s != 'q' && s != 'e')'
-				'putchar'(s);
+		if (s != 'q' && s != 'e')
+			putchar(s);
 			s++;
 	}
 	putchar('\n');
