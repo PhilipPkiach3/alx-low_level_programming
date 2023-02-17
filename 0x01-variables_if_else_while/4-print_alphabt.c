@@ -1,17 +1,20 @@
 #include <stdio.h>
 /**
  * main - main function
- *
- * Return: 0 (success)
+ *Description: Get a random number and check its
+ * Return: 0 
  */
 int main(void)
 {
-	int s = 97, e = 122;
-	while (s <=e)
+	char c = 'a';
+
+	while (c <= 'z')
 	{
-		if (s != 'q' && s != 'e')
-			putchar(s);
-			s++;
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
+		c++;
 	}
 	putchar('\n');
 	return (0);
