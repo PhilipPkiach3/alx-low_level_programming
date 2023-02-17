@@ -1,12 +1,13 @@
 #include <stdio.h>
 /**
  * main - main function
- *Description: Get a random number and check its
+ *Description: get a random number and check its
  * Return: 0 
  */
 int main(void)
 {
 	char c = 'a';
+
 	while (c <= 'z')
 	{
 		if (c != 'e' && c != 'q')
