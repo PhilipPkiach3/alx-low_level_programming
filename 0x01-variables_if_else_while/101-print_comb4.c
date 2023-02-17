@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int s = 0,e = 7,s2 = 1,e2 = 8,s3 = 2,e3 = 9;
+	int s = 0, e = 7, s2 = 1, e2 = 8, s3 = 2 ,e3 = 9;
 
 	while (s <= e)
 	{
