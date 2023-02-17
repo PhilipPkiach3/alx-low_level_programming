@@ -19,6 +19,12 @@ int main(void)
 				putchar(s + '0');
 				putchar(s2 + '0');
 				putchar(s3 + '0');
+
+				if (s != e)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 			s3++;
 		}
