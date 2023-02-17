@@ -32,5 +32,6 @@ int main(void)
 		s++;
 	}
 	putchar('\n');
+
 	return (0);
 }
