@@ -28,7 +28,6 @@ int main(void)
 		tmp++;
 		s++;
 	}
-
 	putchar('\n');
 	return (0);
 }
