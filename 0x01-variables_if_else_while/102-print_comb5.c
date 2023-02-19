@@ -1,6 +1,9 @@
 #include <stdio.h>
-
-int main()
+/**
+ * main - main black
+ * Descrption:Write a program that prints all possible combinations of two two-digit numbers
+ */
+int main(void)
 {
     int i, j;
     for (i = 0; i < 10; i++)
