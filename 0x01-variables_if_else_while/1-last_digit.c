@@ -8,21 +8,20 @@
  */
 int main(void)
 {
-	srand(time(NULL));
-	int n = rand() % 100;
-	int lastDigit = n % 10;
-	printf("Last digit of %d is ", n);
-	if (lastDigit > 5)
-	{
-		printf("and is greater than 5\n");
-	}
-	else if (lastDigit == 0)
-	{
-		printf("and is 0\n");
-	}
-	else
-	{
-		printf("and is less than 6 and nott 0\n");
-	}
-	return (0)
+    srand(time(0));
+    int n = rand();
+    int last_digit = n % 10;
+    if (last_digit > 5)
+    {
+        printf("Last digit of %d is greater than 5\n", n);
+    }
+    else if (last_digit == 0)
+    {
+        printf("Last digit of %d is 0\n", n);
+    }
+    else
+    {
+        printf("Last digit of %d is less than 6 and not 0\n", n);
+    }
+    return 0;
 }
