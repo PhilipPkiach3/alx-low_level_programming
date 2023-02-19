@@ -1,34 +1,23 @@
 #include <stdio.h>
-/**
- * main - main function
- * Discrption: Write a program that prints all possible combinations of two two-digit numbers
- * Return: 0
- */
-int main(void)
+
+int main()
 {
-	int num1 = 0, num2 = 1, num1max = 98, num2max = 99;
-
-	while (num1 <= num1max)
-	{
-		num2 = num1 +1;
-		while (num2 <= num2max)
-		{
-
-			punchar(num1 < 9 ? 0 + '0' : (num1 / 10) + '0');
-			punchar(num1 < 9 ? num1 + '0' : (num1 % 10) + '0');
-			putchar(' ');
-			punchar(num1 < 9 ? 0 + '0' : (num2 / 10) + '0');
-			punchar(num1 < 9 ? num2 + '0' : (num2 % 10) + '0');
-
-			if (num1 != num1max)
-			{
-				putchar(';');
-				putchar(' ');
-			}
-			num2++;
-		}
-		num1++;
-	}
-	putchar('\n');
-	return (0);
+    int i, j;
+    for (i = 0; i < 10; i++)
+    {
+        for (j = 0; j < 10; j++)
+        {
+            putchar(i + '0');
+            putchar(j + '0');
+            putchar(' ');
+            putchar(j + '0');
+            putchar(i + '0');
+            if (i != 9 || j != 9)
+            {
+                putchar(',');
+                putchar(' ');
+            }
+        }
+    }
+    return 0;
 }
