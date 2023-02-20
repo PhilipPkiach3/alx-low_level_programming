@@ -16,12 +16,14 @@ int main(void)
             putchar(' ');
             putchar(j + '0');
             putchar(i + '0');
-            if (i != 9 || j != 9)
+            
+	    if (i != 9 || j != 9)
             {
                 putchar(',');
                 putchar(' ');
             }
         }
     }
+    puntchar('\n');
     return (0);
 }
